@@ -31,7 +31,6 @@ margin-bottom: 38px;
 .video__link {
     width: 69px;
     height: 69px;
-    display: block;
     background-color: #0098cd;
     border-radius: 50%;
     display: flex;
@@ -44,20 +43,19 @@ margin-bottom: 38px;
 }
 
 .video__src {
-    width: 285px;
-    height: 217px;
-    margin-bottom: 60px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+
 }
- .video2 { 
-     font-family: 'Open Sans', sans-serif; 
-     font-size: 16px; 
-     text-align: center; 
-     margin: 110px; 
-      color: #fff; 
-     background-color: #31d4e7; 
+
+.video__container {
+    width: 284px;
+    padding-bottom: 60px;
+}
+ 
     
-    
- } 
+  
  .video_link {
     background-color: #0098cd;
     width: 69px;
@@ -70,23 +68,69 @@ margin-bottom: 38px;
    
 }
 
-.video--btn {
-
-}
-.video___btn {
+/* .video___btn {
     width: 160px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-}
+} */
 .video__link:hover {
     background-color: #09d11a;
 }
-.video___src {
+/* .video__src {
     display: block;
     width: 285px;
     height: 217px;
     text-align: center;
     margin: auto;
-    
-} 
+}  */
+
+@media (min-width: 768px) {
+    .video__title {
+        font-size: 28px;
+        } 
+        .video__text {
+            margin-bottom: 16px;
+            line-height: 26px;
+            font-size: 16px;
+            padding: 0 90px;
+        }
+        .video__btn-container {
+            margin-bottom: 58px;
+            border-radius: 8px;
+            
+            }
+            .video__container {
+                width: 568px;
+                padding-bottom: 100px;
+                margin: 0 auto;
+            }            
+}
+
+@media (min-width: 1200px) {
+    .video__text {
+        padding: 0;
+        text-align: left;
+    }
+ .video__left {
+     width: 45%;
+ }
+ .video__container {
+    width: 45%;
+    padding-bottom: 0;
+    margin: 0 auto;
+ }  
+ .video {
+    margin: 0 auto; 
+    padding: 70px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.video__title {
+    padding-bottom: 0;
+    }
+    .video__btn-container {
+        margin-bottom: 0;
+    }         
+}
